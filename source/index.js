@@ -3,16 +3,14 @@ import { render as reactRender } from 'react-dom';
 import { Provider } from 'react-redux';
 import { AppContainer } from 'react-hot-loader';
 
-import kernel from './kernel'
-
-console.log(kernel);
+import { store } from './kernel'
 
 import App from './globals/components/App';
 
 const rootEl = document.getElementById('root');
 const render = Component =>
   reactRender(
-    <Provider store={kernel.store}>
+    <Provider store={store}>
       <AppContainer>
         <Component />
       </AppContainer>

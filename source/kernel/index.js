@@ -51,4 +51,4 @@ Store part
  */
 const store = createStore(combineReducers(reducers), initial, composeEnhancers(applyMiddleware(...middleware)));
 
-export default { store, routes };
+export { store, routes };
