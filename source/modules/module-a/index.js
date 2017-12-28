@@ -1,3 +1,5 @@
+import React from 'react';
+
 const module = {
   name: 'Module A',
   slug: 'module-a'
@@ -11,8 +13,12 @@ const reducer = (state = {}, action) => {
 
 const routes = [
   {
-    path: `${module.slug}/test-route`,
+    path: `/${module.slug}`,
     component: () => <div>Hello</div>
+  },
+  {
+    path: `/${module.slug}/test-route`,
+    component: () => <div>Hello from the nested route</div>
   }
 ];
 

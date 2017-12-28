@@ -1,3 +1,5 @@
+import React from 'react';
+
 const module = {
   name: 'Module B',
   slug: 'module-b'
@@ -11,7 +13,7 @@ const reducer = (state = {}, action) => {
 
 const routes = [
   {
-    path: `${module.slug}/test-route`,
+    path: `/${module.slug}`,
     component: () => <div>Hello from Module B</div>
   }
 ];
